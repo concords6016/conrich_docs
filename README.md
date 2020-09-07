@@ -1,4 +1,4 @@
-# <span style="font-size:1.5em;">*conrich*</span>&emsp;![Alt text](img/concordLogo1.png?raw=true "concords_logo")  
+# <span style="font-size:1.5em;">*conrich*</span>&emsp;![Alt text](docs/img/concordLogo1.png?raw=true "concords_logo")  
 
 ![PyPI](https://img.shields.io/pypi/v/conrich)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/conrich)
