@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="conrich's documentation made with MkDocs.">
+    
+    
+    <link rel="shortcut icon" href="img/concords_logo.ico">
+
+    
+    <title>Overview - conrich</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body class="homepage" >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href=".">conrich</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Overview</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="install/">Installation</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="tutorial/user_guide/">Table of content</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorial/login/">Login API</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorial/place_order/">Place Order</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorial/register_report/">Register Report</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorial/register_quote/">Register Quote</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="faq/">FAQ</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="install/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/thisisaccfortest/git_mkdocs/edit/master/docs/index.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#conrich">conrich&emsp;</a></li>
+            <li class="second-level"><a href="#contents">Contents</a></li>
+                
+            <li class="second-level"><a href="#reference">Reference</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="conrich"><span style="font-size:1.5em;"><em>conrich</em></span>&emsp;<img alt="Alt text" src="img/concordLogo1.png?raw=true" title="concords_logo" /></h1>
+<p><img alt="PyPI" src="https://img.shields.io/pypi/v/conrich" />
+<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/conrich" />
+<img alt="PyPI - Format" src="https://img.shields.io/pypi/format/conrich" />
+<img alt="PyPI - License" src="https://img.shields.io/pypi/l/conrich" />
+<img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/conrich" />
+<img alt="contact" src="https://img.shields.io/badge/contact-康和證券集團-red" />  </p>
+<hr />
+<p><strong>conrich</strong>為康和綜合證券程式下單API，整合了.net framework 4.5架構下的交易介面，讓使用者可以輕鬆的運用python 3.6+ 執行快速下單。</p>
+<p><strong>conrich</strong> is a securities, futures, option API, which send orders to Concord Securities Group.
+This package integrated with .net framework 4.5, and is compatible with Python 3.6+.
+It is distributed under the MIT license.</p>
+<hr />
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href=".">Overwiew</a><ul>
+<li><a href=".#table-of-content">Table of content</a></li>
+<li><a href=".#reference">Reference</a></li>
+</ul>
+</li>
+<li><a href="install/">Installation</a><ul>
+<li><a href="install/#preinstall">Preinstall</a></li>
+<li><a href="install/#binaries">Binaries</a></li>
+</ul>
+</li>
+<li><a href="tutorial/user_guide/">User Guide</a><ul>
+<li><a href="tutorial/login/">Login</a><ul>
+<li><a href="tutorial/login/#stock">Stock</a></li>
+<li><a href="tutorial/login/#futures">Futures</a></li>
+<li><a href="tutorial/login/#foreign-futures">Foreign Futures</a></li>
+</ul>
+</li>
+<li><a href="tutorial/place_order/">Place Order</a><ul>
+<li><a href="tutorial/place_order/#stock">Stock</a></li>
+<li><a href="tutorial/place_order/#futures">Futures</a></li>
+<li><a href="tutorial/place_order/#foreign-futures">Foreign Futures</a></li>
+</ul>
+</li>
+<li><a href="tutorial/register_report/">Register Event</a>  </li>
+<li><a href="tutorial/register_quote/">Register Quote</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="reference">Reference</h2>
+<p>Click these two links can get the zip file of Stock API and Futures API. The zip file includes the C# example and the relative document of API.<br />
+- <a href="https://www.concords.com.tw/download/20200318_證券API客戶使用元件及文件.zip">Stock API zip file</a><br />
+- <a href="https://www.concordfutures.com.tw/WebSiteUpload//Files/Document/20200728_期貨API.zip">Futures API zip file</a>
+</br>
+</br>
+<p style="text-align:left;">
+    <a href=".">→ Back to main page</a>
+    <span style="float:right;">
+        <a href="#top"><font size="5">⮉ </font><font size="3">Back to top</font></a>
+    </span>
+</p></p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>conrich is licensed under the <a href='https://github.com/thisisaccfortest/git_mkdocs/blob/master/LICENSE'>MIT license</a></small><br>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+        <script>var shortcuts = {"help": 191, "next": 39, "previous": 37, "search": 83}</script>
+    
+    <script src="js/base.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
+
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2020-09-07 08:04:56.896875+00:00
+-->
