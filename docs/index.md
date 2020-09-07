@@ -31,6 +31,7 @@ It is distributed under the MIT license.
         - [Futures](tutorial/place_order.md#futures)
         - [Foreign Futures](tutorial/place_order.md#foreign-futures)
     - [Register Event](tutorial/register_report.md)  
+    - [Register Quote](tutorial/register_quote.md)
 ---
 ## Reference  
 Click these two links can get the zip file of Stock API and Futures API. The zip file includes the C# example and the relative document of API.  
