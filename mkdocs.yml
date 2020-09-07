@@ -1,0 +1,23 @@
+site_name: conrich
+site_description: "conrich's documentation made with MkDocs."
+repo_url: "https://github.com/thisisaccfortest/git_mkdocs/"
+copyright: "conrich is licensed under the <a href='https://github.com/thisisaccfortest/git_mkdocs/blob/master/LICENSE'>MIT license</a>"
+theme:
+  name: null
+  custom_dir: 'cinder'
+nav:
+  - Overview: index.md
+  - Installation: install.md
+  - User Guide:
+    - Table of content: tutorial/user_guide.md
+    - Login API: tutorial/login.md
+    - Place Order: tutorial/place_order.md
+    - Resgister Report: tutorial/register_report.md
+  - FAQ: faq.md
+shortcuts:
+  help: 191    # ?
+  next: 39     # right arrow
+  previous: 37 # left arrow
+  search: 83   # s
+markdown_extensions:
+  - admonition
