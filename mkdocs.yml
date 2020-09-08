@@ -1,7 +1,7 @@
 site_name: conrich
 site_description: "conrich's documentation made with MkDocs."
-repo_url: "https://github.com/thisisaccfortest/git_mkdocs/"
-copyright: "conrich is licensed under the <a href='https://github.com/thisisaccfortest/git_mkdocs/blob/master/LICENSE'>MIT license</a>"
+repo_url: "https://github.com/concords6016/conrich_docs/"
+copyright: "conrich is licensed under the <a href='https://github.com/concords6016/conrich_docs/blob/master/LICENSE'>MIT license</a>"
 theme:
   name: null
   custom_dir: 'cinder'
@@ -22,3 +22,7 @@ shortcuts:
   search: 83   # s
 markdown_extensions:
   - admonition
+plugins:
+  - search
+  - table-reader:
+      data_path: "docs/sum_chart"

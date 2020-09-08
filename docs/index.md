@@ -11,9 +11,8 @@
   
 **conrich** is a securities, futures, option API, which send orders to Concord Securities Group.
 This package integrated with .net framework 4.5, and is compatible with Python 3.6+.
-It is distributed under the MIT license.
+It is distributed under the MIT license. All functions which offer by conrich is summarized in the chart
 ---
-
 ## Contents
 - [Overwiew](index.md)
     - [Table of content](index.md#table-of-content)
@@ -22,7 +21,7 @@ It is distributed under the MIT license.
     - [Preinstall](install.md#preinstall)
     - [Binaries](install.md#binaries)
 - [User Guide](tutorial/user_guide.md)
-    - [Login](tutorial/login.md)
+    - [Login API](tutorial/login.md)
         - [Stock](tutorial/login.md#stock)
         - [Futures](tutorial/login.md#futures)
         - [Foreign Futures](tutorial/login.md#foreign-futures)
@@ -32,6 +31,13 @@ It is distributed under the MIT license.
         - [Foreign Futures](tutorial/place_order.md#foreign-futures)
     - [Register Event](tutorial/register_report.md)  
     - [Register Quote](tutorial/register_quote.md)
+---
+## Summarized Table
+The functions which are provided in **conrich** are summarized in the below link.
+</br>
+- [Stock]  
+- [Futures](sum_chart/futures_chart.md)  
+- [Foreign Futures]  
 ---
 ## Reference  
 Click these two links can get the zip file of Stock API and Futures API. The zip file includes the C# example and the relative document of API.  

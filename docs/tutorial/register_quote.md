@@ -1,5 +1,5 @@
 ## Register realtime Quote
-when you wan to initiate a quote server, you should open and connect to 金好康 first.
+when you wan to initiate a quote server, you should open and connect to 康和金好康 first.
 
 ```python
 from conrich import QuoteServer
@@ -21,7 +21,7 @@ agent.register_topic(topic2, 'Ask')
 
 <br/>
 <p style="text-align:left;">
-    [→ Back to main page](../index.md)
+    [🏠 Back to main page](../index.md)
     <span style="float:right;">
         <a href="#top"><font size="5">⮉</font><font size="3">Back to top</font></a>
     </span>

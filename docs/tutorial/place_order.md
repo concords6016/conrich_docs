@@ -65,7 +65,7 @@ agent.order(action=constant.Action.NEW_ORDER.value,
 ```
 <br/>
 <p style="text-align:left;">
-    [→ Back to main page](../index.md)
+    [🏠 Back to main page](../index.md)
     <span style="float:right;">
         <a href="#top"><font size="5">⮉</font><font size="3">Back to top</font></a>
     </span>

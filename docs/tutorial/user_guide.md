@@ -3,7 +3,7 @@ Here is the document structure in the user guide. To guide the user correctly us
 
 ### Contents of User Guide
 - [User Guide](user_guide.md)
-    - [Login](login.md)
+    - [Login API](login.md)
         - [Stock](login.md#stock)
         - [Futures](login.md#futures)
         - [Foreign Futures](login.md#foreign-futures)
@@ -17,7 +17,7 @@ Here is the document structure in the user guide. To guide the user correctly us
 
 <br/>
 <p style="text-align:left;">
-    [→ Back to main page](../index.md)
+    [🏠 Back to main page](../index.md)
     <span style="float:right;">
         <a href="#top"><font size="5">⮉</font><font size="3">Back to top</font></a>
     </span>

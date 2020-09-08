@@ -2,8 +2,8 @@
 Before using **conrich**, there is something that need to be installed.  
 
 !!! danger highlight blink "Requirement"
-    - Must already install application named 金好康.
-        - If not install can download from this link first. [金好康](https://xtupdate.xq.com.tw/tradedas/installer/daqcsc/tw/kingconsetup.exe)
+    - Must already install application named 康和金好康.
+        - If not install can download from this link first. [康和金好康](https://xtupdate.xq.com.tw/tradedas/installer/daqcsc/tw/kingconsetup.exe)
 ### Preinstall
 >API usage needs application in advance. In order to use this package, please contact us. 
  
