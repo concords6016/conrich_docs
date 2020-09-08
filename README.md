@@ -16,5 +16,11 @@ This is the documentation for **conrich**.
 This package integrated with .net framework 4.5, and is compatible with Python 3.6+.
 It is distributed under the MIT license.
 
+## Website
+More information about Boolector is available at:[conrich_docs](https://concords6016.github.io/conrich_docs/)
 
-Website is published at  [conrich_docs](https://concords6016.github.io/conrich_docs/)
+## Requirements
+Building requires:
+- Windows
+- Python3.6+
+- 康和金好康
