@@ -15,7 +15,8 @@ It is distributed under the MIT license. All functions which offer by conrich is
 ---
 ## Contents
 - [Overwiew](index.md)
-    - [Table of content](index.md#table-of-content)
+    - [Content](index.md#table-of-content)
+    - [Summarized Table](index.md#summarized-table)
     - [Reference](index.md#reference)
 - [Installation](install.md)
     - [Preinstall](install.md#preinstall)
