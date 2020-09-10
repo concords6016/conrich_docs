@@ -1,0 +1,36 @@
+類別, 中文說明             , 國內API規格                , 參數             , 說明                                                      
+"<p style=""font-size:15px"">系統相關</p>", 登入               ,login                  , in_no          , 身分證字號                                                   
+        ,                  ,                        , pwd            , 密碼                                                      
+"<p style=""font-size:15px"">基本資料</p>", 查詢帳號          ,account_info           ,                ,                                                         
+"<p style=""font-size:15px"">交易相關</p>   ", 單筆下單             ,order                  ,action         ,NewOrder(新單)、ModifyQty(改量)、ModifyPrice(改價)、CancelOrder(刪單) 
+        ,                  ,                        ,branch_no      ,分公司代號，例：F029000                                         
+        ,                  ,                        ,account_no     ,帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+,,,lot_type,交易別，RoundLot=整股、BlockLot=鉅額、OddLot=零股、FixedPrice=定價
+,,,order_type,委託別，Ordinary=現股、Margin=自資、Short=自券
+,,,side,買賣別，Buy=買、Sell=賣
+,,,day_trade_flag,現沖註記，Enable=是、Unable=否
+,,,symbol,商品代號，例 : 6016
+,,,quantity,委託數量
+,,,price,委託價格(限價須帶入委託價格)
+,,,price_flag,價格註記，Limit=限價、Market=市價、LimitUp=漲停、LimitDown=跌停、Unchange=平盤
+,,,time_in_force,委託條件，ROD=當盤有效、IOC=立即成交其餘刪除、FOK=全部立即成交否則刪除
+,,,orig_net_no,原網路單號，刪改單時，須帶入被刪改之委託單資訊
+,,,order_id,委託書號，刪改單時，須帶入被刪改之委託單資訊
+        , 回補               ,order_recover          , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+"<p style=""font-size:15px"">帳務查詢</p>      ",即時交割金額試算,current_delivery, branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+,近3日應收付,three_days_delivery, branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        ,歷史對帳單查詢,history_delivery, branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        ,                  ,                        , strSDate       , 起始日期，日期格式 : yyyyMMdd                                                    
+        ,                  ,                        , strEDate       , 結束日期，日期格式 : yyyyMMdd                                                    
+,已實現損益彙總查詢,realized_profit, branch_no      , 分公司代號，例：F029000                                         
+,,, account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+,,, strSDate       , 起始日期，日期格式 : yyyyMMdd                                                    
+,,, strEDate       , 結束日期，日期格式 : yyyyMMdd                                                    
+,未實現損益彙總查詢,unrealized_profit, branch_no      , 分公司代號，例：F029000                                         
+,,, account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+,維持率彙總試算查詢,maintenance_rate, branch_no      , 分公司代號，例：F029000                                         
+,,, account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              

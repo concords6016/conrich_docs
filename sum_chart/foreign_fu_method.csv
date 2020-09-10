@@ -1,0 +1,65 @@
+類別, 中文說明             , 國外API規格                , 參數             , 說明                                                      
+系統相關, 登入               , login                  , in_no          , 身分證字號                                                   
+        ,                  ,                        , pwd            , 密碼                                                      
+        ,                  ,                        , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        , 檢查連線狀況           , check_connect          ,                ,                                                         
+基本資料, 查詢帳號資訊           , account_info           ,                ,                                                         
+        , 查詢是否多帳號登入        , check_multi_login      ,                ,                                                         
+        , 查詢期貨商品           , get_commodity          ,                ,                                                         
+        , 查詢期貨商品月份         , get_commodity_by_month ,                ,                                                         
+,查詢匯率,exchange_rate,,
+交易相關,單筆下單             ,order                  ,action         ,"OrderNew(新單), OrderChangeQty(改量), OrderChangePrice(改價), OrderDelete(刪單) "
+        ,                  ,                        ,branch_no      ,分公司代號，例：F029000                                         
+        ,                  ,                        ,account_no     ,帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+,,,exchange,交易所
+,,,side1,買賣別1，B=買、S=賣
+,,,market_type1    ,市場別1，F=期貨、O=選擇權                                          
+,,,compound1  ,商品代號1，例 : TXFI0、TXO12700I0
+,,,compound_month1  ,商品月份1，日期格式 : yyyyMM
+,,,strike_price1,"履約價1,最大長度(12.12)"
+,,,put_call1,買賣權1，N=期貨、C=選擇權Call、P=選擇權Put
+,,,side2,買賣別2，B=買、S=賣
+,,,market_type2    ,市場別2，F=期貨、O=選擇權                                          
+,,,compound2  ,商品代號2，例 : TXFI0、TXO12700I0
+,,,compound_month2  ,商品月份2，日期格式 : yyyyMM
+,,,strike_price2,履約價2，最大長度(12.12)
+,,,put_call2,買賣權2，N=期貨、C=選擇權Call、P=選擇權Put
+,,,order_type     ,委託方式，MKT=市價、LMT=限價、STP=停損市價、SWL:停損限價
+,,,price,限價，最大長度(12.12)
+,,,price_numerator,限價(分子)，最大長度(4.4)
+,,,price_denominator,限價(分母)，最大長度(5)
+,,,stop_price,停損價，最大長度(12.12)
+,,,stop_price_numerator,停損價(分子)，最大長度(4.4)
+,,,stop_price_denominator,停損價(分母)，最大長度(5)
+,,,quantity,委託數量，最大長度(4)
+,,,writeoff, 沖銷別(開平倉碼)，0=開倉、1=平倉、2=期貨當沖              
+,,,order_id       , 委託書號                                                    
+,,,compound_type  ,單複式別，N=非組合
+,,,orig_quantity,原委託數量
+        , 回補               , order_recover          , branch_no      ,分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        ,                  ,                        , seq_start      , 開始序號                                                    
+        ,                  ,                        , seq_end        , 結束序號                                                    
+        , 回報查詢             , query_order            , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        ,                  ,                        , record_type    ," 記錄類別，Order=委託單, Deal=成交單"
+        ,                  ,                        , period         ," 時間區間，History=歷史, Today=今日                                  "
+帳務查詢, 期貨保證金查詢          , margin                 , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        , 未平倉查詢 (外期含多貨幣查詢) , position               , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        , 即時部位查詢           , position_index         , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        , 沖銷明細查詢           , offset                 , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        , 歷史沖銷明細查詢         , offset_history         , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        ,                  ,                        , strSDate       , 起始日期，日期格式 : yyyyMMdd                                                    
+        ,                  ,                        , strEDate       , 結束日期，日期格式 : yyyyMMdd                                                    
+        , 出入金查詢            , deposit                , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        , 歷史出入金查詢          , deposit_history        , branch_no      , 分公司代號，例：F029000                                         
+        ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
+        ,                  ,                        , strSDate       , 起始日期，日期格式 : yyyyMMdd                                                    
+        ,                  ,                        , strEDate       , 結束日期，日期格式 : yyyyMMdd                                                    

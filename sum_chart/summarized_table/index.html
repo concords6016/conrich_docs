@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="conrich's documentation made with MkDocs.">
+    
+    
+    <link rel="shortcut icon" href="../../img/concords_logo.ico">
+
+    
+    <title>Summarized table - conrich</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="../..">conrich</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Overview</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../install/">Installation</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../tutorial/user_guide/">Table of content</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tutorial/login/">Login API</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tutorial/place_order/">Place Order</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tutorial/register_report/">Register Report</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tutorial/register_quote/">Register Quote</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../faq/">FAQ</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/concords6016/conrich_docs/edit/master/docs/sum_chart/summarized_table.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#summarized-table">Summarized table</a></li>
+            <li class="second-level"><a href="#stock">Stock</a></li>
+                
+                <li class="third-level"><a href="#trading-method">Trading method</a></li>
+                <li class="third-level"><a href="#event-subscribe">Event subscribe</a></li>
+            <li class="second-level"><a href="#futures">Futures</a></li>
+                
+                <li class="third-level"><a href="#trading-method_1">Trading method</a></li>
+                <li class="third-level"><a href="#event-subscribe_1">Event subscribe</a></li>
+            <li class="second-level"><a href="#foreign-futures">Foreign Futures</a></li>
+                
+                <li class="third-level"><a href="#trading-method_2">Trading method</a></li>
+                <li class="third-level"><a href="#event-subscribe_2">Event subscribe</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="summarized-table">Summarized table</h2>
+<p>All functions provide for trading API are summarized in this table. 
+Click the link below the category title can downlaod the csv file of functions' summarized table.  </p>
+<hr />
+<h3 id="stock">Stock</h3>
+<h4 id="trading-method">Trading method</h4>
+<p><a href="../stock_method.csv">Download file</a><img alt="Alt text" src="../../img/download.gif" />  </p>
+<table>
+<thead>
+<tr>
+<th align="left">類別</th>
+<th align="left">中文說明</th>
+<th align="left">國內API規格</th>
+<th align="left">參數</th>
+<th align="left">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><p style="font-size:15px">系統相關</p></td>
+<td align="left">登入</td>
+<td align="left">login</td>
+<td align="left">in_no</td>
+<td align="left">身分證字號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">pwd</td>
+<td align="left">密碼</td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px">基本資料</p></td>
+<td align="left">查詢帳號</td>
+<td align="left">account_info</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px">交易相關</p></td>
+<td align="left">單筆下單</td>
+<td align="left">order</td>
+<td align="left">action</td>
+<td align="left">NewOrder(新單)、ModifyQty(改量)、ModifyPrice(改價)、CancelOrder(刪單)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">lot_type</td>
+<td align="left">交易別，RoundLot=整股、BlockLot=鉅額、OddLot=零股、FixedPrice=定價</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">order_type</td>
+<td align="left">委託別，Ordinary=現股、Margin=自資、Short=自券</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">side</td>
+<td align="left">買賣別，Buy=買、Sell=賣</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">day_trade_flag</td>
+<td align="left">現沖註記，Enable=是、Unable=否</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">symbol</td>
+<td align="left">商品代號，例 : 6016</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">quantity</td>
+<td align="left">委託數量</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">price</td>
+<td align="left">委託價格(限價須帶入委託價格)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">price_flag</td>
+<td align="left">價格註記，Limit=限價、Market=市價、LimitUp=漲停、LimitDown=跌停、Unchange=平盤</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">time_in_force</td>
+<td align="left">委託條件，ROD=當盤有效、IOC=立即成交其餘刪除、FOK=全部立即成交否則刪除</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">orig_net_no</td>
+<td align="left">原網路單號，刪改單時，須帶入被刪改之委託單資訊</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">order_id</td>
+<td align="left">委託書號，刪改單時，須帶入被刪改之委託單資訊</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">回補</td>
+<td align="left">order_recover</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px">帳務查詢</p></td>
+<td align="left">即時交割金額試算</td>
+<td align="left">current_delivery</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">近3日應收付</td>
+<td align="left">three_days_delivery</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">歷史對帳單查詢</td>
+<td align="left">history_delivery</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strSDate</td>
+<td align="left">起始日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strEDate</td>
+<td align="left">結束日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">已實現損益彙總查詢</td>
+<td align="left">realized_profit</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strSDate</td>
+<td align="left">起始日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strEDate</td>
+<td align="left">結束日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">未實現損益彙總查詢</td>
+<td align="left">unrealized_profit</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">維持率彙總試算查詢</td>
+<td align="left">maintenance_rate</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="event-subscribe">Event subscribe</h4>
+<p><a href="../stock_event.csv">Download file</a><img alt="Alt text" src="../../img/download.gif" /></p>
+<table>
+<thead>
+<tr>
+<th align="left">類別</th>
+<th align="left">中文說明</th>
+<th align="left">國內API規格</th>
+<th align="left">參數</th>
+<th align="left">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><p style="font-size:15px">系統相關</p></td>
+<td align="left">連線狀態事件</td>
+<td align="left">socket_status_event_handler</td>
+<td align="left">connect</td>
+<td align="left">連線方式，Send=委託下單、Receive=委託回報</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">連線狀態訊息</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">一般狀態事件</td>
+<td align="left">general_event_handler</td>
+<td align="left">msg</td>
+<td align="left">事件回應訊息</td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px">交易相關</p></td>
+<td align="left">委託回報事件</td>
+<td align="left">order_report_event_handler</td>
+<td align="left">result</td>
+<td align="left">委託結果物件</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">原始回報電文</td>
+</tr>
+<tr>
+<td align="left">nan</td>
+<td align="left">主動委成回通知事件</td>
+<td align="left">bulletin_event_handler</td>
+<td align="left">msg</td>
+<td align="left">公告訊息</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">nan</td>
+<td align="left">nan</td>
+</tr>
+</tbody>
+</table>
+<h3 id="futures">Futures</h3>
+<h4 id="trading-method_1">Trading method</h4>
+<p><a href="../fu_method.csv">Download file</a><img alt="Alt text" src="../../img/download.gif" /></p>
+<table>
+<thead>
+<tr>
+<th align="left">類別</th>
+<th align="left">中文說明</th>
+<th align="left">國內API規格</th>
+<th align="left">參數</th>
+<th align="left">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><p style="font-size:15px">系統相關</p></td>
+<td align="left">登入</td>
+<td align="left">login</td>
+<td align="left">in_no</td>
+<td align="left">身分證字號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">pwd</td>
+<td align="left">密碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">檢查連線狀況</td>
+<td align="left">check_connect</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px"> 基本資料</p></td>
+<td align="left">查詢帳號資訊</td>
+<td align="left">account_info</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">查詢是否多帳號登入</td>
+<td align="left">check_multi_login</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">查詢期貨商品</td>
+<td align="left">get_commodity</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">查詢期貨商品月份</td>
+<td align="left">get_commodity_by_month</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px">交易相關</p></td>
+<td align="left">單筆下單</td>
+<td align="left">order</td>
+<td align="left">action</td>
+<td align="left">OrderNew(新單), OrderChangeQty(改量), OrderChangePrice(改價), OrderDelete(刪單)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">market_type</td>
+<td align="left">市場別，F=期貨、O=選擇權</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">compound_type</td>
+<td align="left">單複式別，1=期貨單式、2=選擇權單式、3=選擇權複式、4=期貨複式</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">commodity</td>
+<td align="left">商品代號，例 : TXFI0、TXO12700I0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">time_in_force</td>
+<td align="left">委託條件，F:=FOK、I=IOC、R=ROD</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">writeoff</td>
+<td align="left">沖銷別(開平倉碼)，0=開倉、1=平倉、2=期貨當沖、空白=自動</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">order_type</td>
+<td align="left">委託方式，M=市價、L=限價、P=一定範圍市價</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">side</td>
+<td align="left">買賣別，B=買、S=賣</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">quantity</td>
+<td align="left">委託數量，新增時請輸入委託數量，例：1口=1、10口=10</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">price</td>
+<td align="left">委託價格，市價委託時請輸入0，例：80.50、8000.00(含小數點+小數兩位)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">orig_net_no</td>
+<td align="left">原網路單號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">order_id</td>
+<td align="left">委託書號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">回補</td>
+<td align="left">order_recover</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">seq_start</td>
+<td align="left">開始序號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">seq_end</td>
+<td align="left">結束序號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">回報查詢</td>
+<td align="left">query_order</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">record_type</td>
+<td align="left">記錄類別，Order=委託單, Deal=成交單</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">period</td>
+<td align="left">時間區間，History=歷史, Today=今日</td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px">帳務查詢</p></td>
+<td align="left">期貨保證金查詢</td>
+<td align="left">margin</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">currency</td>
+<td align="left">查詢幣別， TWD=國內台幣、US$=國內美元、** =約當台幣、ALL=全部</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">group</td>
+<td align="left">群組，查詢非子帳客戶傳空白，查詢子帳客戶所有組別資料傳"***"</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">trader</td>
+<td align="left">交易員代號，查詢非子帳客戶傳空白，查詢子帳客戶所有子帳資料傳"<strong>*</strong>*"</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">未平倉查詢 (外期含多貨幣查詢)</td>
+<td align="left">position</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">group</td>
+<td align="left">群組，查詢非子帳客戶傳空白，查詢子帳客戶所有組別資料傳"***"</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">trader</td>
+<td align="left">交易員代號，查詢非子帳客戶傳空白，查詢子帳客戶所有子帳資料傳"<strong>*</strong>*"</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">compound_type</td>
+<td align="left">查詢類別，1=單式、2=複式、3=全部</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">未平倉彙總查詢</td>
+<td align="left">position_summary</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">compound_type</td>
+<td align="left">查詢類別 1:單式  2:複式  3:全部</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">即時部位查詢</td>
+<td align="left">position_index</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">沖銷明細查詢</td>
+<td align="left">offset</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">歷史沖銷明細查詢</td>
+<td align="left">offset_history</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strSDate</td>
+<td align="left">起始日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strEDate</td>
+<td align="left">結束日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">出入金查詢</td>
+<td align="left">deposit</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">歷史出入金查詢</td>
+<td align="left">deposit_history</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strSDate</td>
+<td align="left">起始日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strEDate</td>
+<td align="left">結束日期，日期格式 : yyyyMMdd</td>
+</tr>
+</tbody>
+</table>
+<h4 id="event-subscribe_1">Event subscribe</h4>
+<p><a href="../fu_event.csv">Download file</a><img alt="Alt text" src="../../img/download.gif" /></p>
+<table>
+<thead>
+<tr>
+<th align="left">類別</th>
+<th align="left">中文說明</th>
+<th align="left">國內API規格</th>
+<th align="left">參數</th>
+<th align="left">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><p style="font-size:15px">系統相關</p></td>
+<td align="left">主動一般通知事件</td>
+<td align="left">OnFGeneralReport</td>
+<td align="left">code</td>
+<td align="left">代碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">訊息</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">主動錯誤通知事件</td>
+<td align="left">OnFErrorReport</td>
+<td align="left">code</td>
+<td align="left">代碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">訊息</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">主動公告通知事件</td>
+<td align="left">OnFBulletinReport</td>
+<td align="left">code</td>
+<td align="left">代碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">訊息</td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px">交易相關</p></td>
+<td align="left">主動委成回通知事件</td>
+<td align="left">OnFOrderReport</td>
+<td align="left">code</td>
+<td align="left">代碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">訊息</td>
+</tr>
+</tbody>
+</table>
+<h3 id="foreign-futures">Foreign Futures</h3>
+<h4 id="trading-method_2">Trading method</h4>
+<p><a href="../foreign_fu_method.csv">Download file</a><img alt="Alt text" src="../../img/download.gif" /></p>
+<table>
+<thead>
+<tr>
+<th align="left">類別</th>
+<th align="left">中文說明</th>
+<th align="left">國外API規格</th>
+<th align="left">參數</th>
+<th align="left">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">系統相關</td>
+<td align="left">登入</td>
+<td align="left">login</td>
+<td align="left">in_no</td>
+<td align="left">身分證字號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">pwd</td>
+<td align="left">密碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">檢查連線狀況</td>
+<td align="left">check_connect</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">基本資料</td>
+<td align="left">查詢帳號資訊</td>
+<td align="left">account_info</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">查詢是否多帳號登入</td>
+<td align="left">check_multi_login</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">查詢期貨商品</td>
+<td align="left">get_commodity</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">查詢期貨商品月份</td>
+<td align="left">get_commodity_by_month</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">查詢匯率</td>
+<td align="left">exchange_rate</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">交易相關</td>
+<td align="left">單筆下單</td>
+<td align="left">order</td>
+<td align="left">action</td>
+<td align="left">OrderNew(新單), OrderChangeQty(改量), OrderChangePrice(改價), OrderDelete(刪單)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">exchange</td>
+<td align="left">交易所</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">side1</td>
+<td align="left">買賣別1，B=買、S=賣</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">market_type1</td>
+<td align="left">市場別1，F=期貨、O=選擇權</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">compound1</td>
+<td align="left">商品代號1，例 : TXFI0、TXO12700I0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">compound_month1</td>
+<td align="left">商品月份1，日期格式 : yyyyMM</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strike_price1</td>
+<td align="left">履約價1,最大長度(12.12)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">put_call1</td>
+<td align="left">買賣權1，N=期貨、C=選擇權Call、P=選擇權Put</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">side2</td>
+<td align="left">買賣別2，B=買、S=賣</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">market_type2</td>
+<td align="left">市場別2，F=期貨、O=選擇權</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">compound2</td>
+<td align="left">商品代號2，例 : TXFI0、TXO12700I0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">compound_month2</td>
+<td align="left">商品月份2，日期格式 : yyyyMM</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strike_price2</td>
+<td align="left">履約價2，最大長度(12.12)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">put_call2</td>
+<td align="left">買賣權2，N=期貨、C=選擇權Call、P=選擇權Put</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">order_type</td>
+<td align="left">委託方式，MKT=市價、LMT=限價、STP=停損市價、SWL:停損限價</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">price</td>
+<td align="left">限價，最大長度(12.12)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">price_numerator</td>
+<td align="left">限價(分子)，最大長度(4.4)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">price_denominator</td>
+<td align="left">限價(分母)，最大長度(5)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">stop_price</td>
+<td align="left">停損價，最大長度(12.12)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">stop_price_numerator</td>
+<td align="left">停損價(分子)，最大長度(4.4)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">stop_price_denominator</td>
+<td align="left">停損價(分母)，最大長度(5)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">quantity</td>
+<td align="left">委託數量，最大長度(4)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">writeoff</td>
+<td align="left">沖銷別(開平倉碼)，0=開倉、1=平倉、2=期貨當沖</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">order_id</td>
+<td align="left">委託書號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">compound_type</td>
+<td align="left">單複式別，N=非組合</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">orig_quantity</td>
+<td align="left">原委託數量</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">回補</td>
+<td align="left">order_recover</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">seq_start</td>
+<td align="left">開始序號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">seq_end</td>
+<td align="left">結束序號</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">回報查詢</td>
+<td align="left">query_order</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">record_type</td>
+<td align="left">記錄類別，Order=委託單, Deal=成交單</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">period</td>
+<td align="left">時間區間，History=歷史, Today=今日</td>
+</tr>
+<tr>
+<td align="left">帳務查詢</td>
+<td align="left">期貨保證金查詢</td>
+<td align="left">margin</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">未平倉查詢 (外期含多貨幣查詢)</td>
+<td align="left">position</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">即時部位查詢</td>
+<td align="left">position_index</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">沖銷明細查詢</td>
+<td align="left">offset</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">歷史沖銷明細查詢</td>
+<td align="left">offset_history</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strSDate</td>
+<td align="left">起始日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strEDate</td>
+<td align="left">結束日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">出入金查詢</td>
+<td align="left">deposit</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">歷史出入金查詢</td>
+<td align="left">deposit_history</td>
+<td align="left">branch_no</td>
+<td align="left">分公司代號，例：F029000</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">account_no</td>
+<td align="left">帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strSDate</td>
+<td align="left">起始日期，日期格式 : yyyyMMdd</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">strEDate</td>
+<td align="left">結束日期，日期格式 : yyyyMMdd</td>
+</tr>
+</tbody>
+</table>
+<h4 id="event-subscribe_2">Event subscribe</h4>
+<p><a href="../foreign_fu_event.csv">Download file</a><img alt="Alt text" src="../../img/download.gif" /></p>
+<table>
+<thead>
+<tr>
+<th align="left">類別</th>
+<th align="left">中文說明</th>
+<th align="left">國外API規格</th>
+<th align="left">參數</th>
+<th align="left">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><p style="font-size:15px">系統相關</p></td>
+<td align="left">主動一般通知事件</td>
+<td align="left">general_event_handler</td>
+<td align="left">code</td>
+<td align="left">代碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">訊息</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">主動錯誤通知事件</td>
+<td align="left">error_event_handler</td>
+<td align="left">code</td>
+<td align="left">代碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">訊息</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">主動公告通知事件</td>
+<td align="left">bulletin_event_handler</td>
+<td align="left">code</td>
+<td align="left">代碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">訊息</td>
+</tr>
+<tr>
+<td align="left"><p style="font-size:15px">交易相關</p></td>
+<td align="left">主動委成回通知事件</td>
+<td align="left">order_report_event_handler</td>
+<td align="left">code</td>
+<td align="left">代碼</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">msg</td>
+<td align="left">訊息</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<p style="text-align:left;">
+    <a href="../..">🏠 Back to main page</a>
+    <span style="float:right;">
+        <a href="#top"><font size="5">⮉</font><font size="3">Back to top</font></a>
+    </span>
+</p></p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>conrich is licensed under the <a href='https://github.com/concords6016/conrich_docs/blob/master/LICENSE'>MIT license</a></small><br>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+        <script>var shortcuts = {"help": 191, "next": 39, "previous": 37, "search": 83}</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
