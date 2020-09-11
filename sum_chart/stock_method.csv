@@ -1,8 +1,8 @@
 類別, 中文說明             , 國內API規格                , 參數             , 說明                                                      
-"<p style=""font-size:15px"">系統相關</p>", 登入               ,login                  , in_no          , 身分證字號                                                   
+系統相關, 登入               ,login                  , in_no          , 身分證字號                                                   
         ,                  ,                        , pwd            , 密碼                                                      
-"<p style=""font-size:15px"">基本資料</p>", 查詢帳號          ,account_info           ,                ,                                                         
-"<p style=""font-size:15px"">交易相關</p>   ", 單筆下單             ,order                  ,action         ,NewOrder(新單)、ModifyQty(改量)、ModifyPrice(改價)、CancelOrder(刪單) 
+基本資料, 查詢帳號          ,account_info           ,                ,                                                         
+交易相關  , 單筆下單             ,order                  ,action         ,NewOrder(新單)、ModifyQty(改量)、ModifyPrice(改價)、CancelOrder(刪單) 
         ,                  ,                        ,branch_no      ,分公司代號，例：F029000                                         
         ,                  ,                        ,account_no     ,帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
 ,,,lot_type,交易別，RoundLot=整股、BlockLot=鉅額、OddLot=零股、FixedPrice=定價
@@ -18,7 +18,7 @@
 ,,,order_id,委託書號，刪改單時，須帶入被刪改之委託單資訊
         , 回補               ,order_recover          , branch_no      , 分公司代號，例：F029000                                         
         ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
-"<p style=""font-size:15px"">帳務查詢</p>      ",即時交割金額試算,current_delivery, branch_no      , 分公司代號，例：F029000                                         
+帳務查詢     ,即時交割金額試算,current_delivery, branch_no      , 分公司代號，例：F029000                                         
         ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
 ,近3日應收付,three_days_delivery, branch_no      , 分公司代號，例：F029000                                         
         ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              

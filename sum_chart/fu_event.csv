@@ -1,9 +1,9 @@
 類別, 中文說明             , 國內API規格                , 參數             , 說明                                                      
-"<p style=""font-size:15px"">系統相關</p>",主動一般通知事件             ,OnFGeneralReport,code,代碼
+系統相關,主動一般通知事件             ,OnFGeneralReport,code,代碼
  ,                  ,                        ,msg,訊息
  ,主動錯誤通知事件 ,OnFErrorReport,code,代碼
  ,                  ,                        ,msg,訊息
  ,主動公告通知事件,OnFBulletinReport,code,代碼
  ,                  ,                        ,msg,訊息
-"<p style=""font-size:15px"">交易相關</p>",主動委成回通知事件,OnFOrderReport,code,代碼
+交易相關,主動委成回通知事件,OnFOrderReport,code,代碼
  ,                  ,                        ,msg,訊息

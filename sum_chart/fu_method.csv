@@ -1,14 +1,14 @@
 類別, 中文說明             , 國內API規格                , 參數             , 說明                                                      
-"<p style=""font-size:15px"">系統相關</p>", 登入               , login                  , in_no          , 身分證字號                                                   
+系統相關, 登入               , login                  , in_no          , 身分證字號                                                   
         ,                  ,                        , pwd            , 密碼                                                      
         ,                  ,                        , branch_no      , 分公司代號，例：F029000                                         
         ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
         , 檢查連線狀況           , check_connect          ,                ,                                                         
-"<p style=""font-size:15px""> 基本資料</p>", 查詢帳號資訊           , account_info           ,                ,                                                         
+基本資料, 查詢帳號資訊           , account_info           ,                ,                                                         
         , 查詢是否多帳號登入        , check_multi_login      ,                ,                                                         
         , 查詢期貨商品           , get_commodity          ,                ,                                                         
         , 查詢期貨商品月份         , get_commodity_by_month ,                ,                                                         
-"<p style=""font-size:15px"">交易相關</p>   ", 單筆下單             , order                  , action         ," OrderNew(新單), OrderChangeQty(改量), OrderChangePrice(改價), OrderDelete(刪單) "
+交易相關 , 單筆下單             , order                  , action         ," OrderNew(新單), OrderChangeQty(改量), OrderChangePrice(改價), OrderDelete(刪單) "
         ,                  ,                        , branch_no      , 分公司代號，例：F029000                                         
         ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
         ,                  ,                        , market_type    , 市場別，F=期貨、O=選擇權                                          
@@ -30,7 +30,7 @@
         ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
         ,                  ,                        , record_type    ," 記錄類別，Order=委託單, Deal=成交單"
         ,                  ,                        , period         ," 時間區間，History=歷史, Today=今日                                  "
-"<p style=""font-size:15px"">帳務查詢</p>      ", 期貨保證金查詢          , margin                 , branch_no      , 分公司代號，例：F029000                                         
+帳務查詢     , 期貨保證金查詢          , margin                 , branch_no      , 分公司代號，例：F029000                                         
         ,                  ,                        , account_no     , 帳號共七碼，含檢查碼，例：1009991、0000455(含檢查碼)                              
         ,                  ,                        , currency       , 查詢幣別， TWD=國內台幣、US$=國內美元、** =約當台幣、ALL=全部                  
         ,                  ,                        , group          ," 群組，查詢非子帳客戶傳空白，查詢子帳客戶所有組別資料傳""***""                  "
