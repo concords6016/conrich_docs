@@ -1,4 +1,4 @@
-# <span style="font-size:1.5em;">*conrich*</span>&emsp;![Alt text](img/concordLogo1.png?raw=true "concords_logo")  
+# <span style="font-size:1.5em;">*conrich*</span>&emsp;![Alt text](img/concordLogo1.png)  
 
 ![PyPI](https://img.shields.io/pypi/v/conrich)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/conrich)
@@ -32,23 +32,38 @@ It is distributed under the MIT license. All functions which offer by conrich is
         - [Foreign Futures](tutorial/place_order.md#foreign-futures)
     - [Register Event](tutorial/register_report.md)  
     - [Register Quote](tutorial/register_quote.md)
+- [FAQ](faq.md)
+---
+### Requirement
+Package using requires:
+
+- Windows 7+
+- .net framework 4.5
+- Python3.6+
+- 康和金好康
 ---
 ## Summarized Table
-The functions which are provided in **conrich** are summarized in the below link.
-</br>
-- [Stock]  
-- [Futures](sum_chart/futures_chart.md)  
-- [Foreign Futures]  
+The functions which are provided in **conrich** are summarized in the below link.  
+
+- [Stock](sum_chart/summarized_table.md#stock)
+    - [Trading method](sum_chart/summarized_table.md#trading-method)   
+    - [Event subscribe](sum_chart/summarized_table.md#event-subscribe)  
+- [Futures](sum_chart/summarized_table.md#futures)    
+    - [Trading method](sum_chart/summarized_table.md#trading-method_1)   
+    - [Event subscribe](sum_chart/summarized_table.md#event-subscribe_1)  
+- [Foreign Futures](sum_chart/summarized_table.md#foreign-futures)   
+    - [Trading method](sum_chart/summarized_table.md#trading-method_2)   
+    - [Event subscribe](sum_chart/summarized_table.md#event-subscribe_2)  
 ---
 ## Reference  
 Click these two links can get the zip file of Stock API and Futures API. The zip file includes the C# example and the relative document of API.  
 - [Stock API zip file](https://www.concords.com.tw/download/20200318_證券API客戶使用元件及文件.zip)  
 - [Futures API zip file](https://www.concordfutures.com.tw/WebSiteUpload//Files/Document/20200728_期貨API.zip)
-</br>
-</br>
+<br>
+<br>
 <p style="text-align:left;">
-    [→ Back to main page](index.md)
+    [🏠 Back to main page](index.md)
     <span style="float:right;">
-        <a href="#top"><font size="5">⮉ </font><font size="3">Back to top</font></a>
+        <a href="#top"><font size="5">⮉</font><font size="3">Back to top</font></a>
     </span>
 </p>

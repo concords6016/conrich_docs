@@ -2,8 +2,8 @@
 Before using **conrich**, there is something that need to be installed.  
 
 !!! danger highlight blink "Requirement"
-    - Must already install application named 康和金好康.
-        - If not install can download from this link first. [康和金好康](https://xtupdate.xq.com.tw/tradedas/installer/daqcsc/tw/kingconsetup.exe)
+    - **{==Must already install==}** application named 康和金好康.
+        - If **{==not==}** install can download from this link first. [康和金好康](https://xtupdate.xq.com.tw/tradedas/installer/daqcsc/tw/kingconsetup.exe)
 ### Preinstall
 >API usage needs application in advance. In order to use this package, please contact us. 
  
@@ -12,7 +12,7 @@ Before using **conrich**, there is something that need to be installed.
 
 !!! note
     The path of `Concord.API.Stock.Setup.msi`:zip_file/安裝程式/Concord.API.Stock.Setup.msi.
-<br/>
+<br>
 ### Installation
 After execute `Concord.API.Stock.Setup.msi`, just simply use pip to install package.
 ```
@@ -20,9 +20,9 @@ pip install conrich
 ```
 
 !!! Warning
-    - python version must to be **3.6+**.
-    - Available install for python **3.6+ 32bit** and **64bit** edition.
-<br/>
+    - python version must to be **{==3.6+==}**.
+    - Available install for python **{==3.6+==} {==32bit==}** and **{==64bit==}** edition.
+<br>
 <p style="text-align:left;">
     [→ Back to main page](index.md)
     <span style="float:right;">

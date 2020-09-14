@@ -22,6 +22,7 @@ shortcuts:
   search: 83   # s
 markdown_extensions:
   - admonition
+  - pymdownx.critic
 plugins:
   - search
   - table-reader:

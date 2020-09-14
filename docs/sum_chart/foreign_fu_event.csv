@@ -1,0 +1,9 @@
+類別, 中文說明             , 國外API規格                , 參數             , 說明                                                      
+系統相關,主動一般通知事件             ,general_event_handler,code,代碼
+  ,                  ,                        ,msg,訊息
+   ,主動錯誤通知事件 ,error_event_handler,code,代碼
+  ,                  ,                        ,msg,訊息
+  ,主動公告通知事件,bulletin_event_handler,code,代碼
+  ,                  ,                        ,msg,訊息
+交易相關,主動委成回通知事件,order_report_event_handler,code,代碼
+  ,                  ,                        ,msg,訊息

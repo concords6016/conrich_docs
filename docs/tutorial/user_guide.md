@@ -15,7 +15,7 @@ Here is the document structure in the user guide. To guide the user correctly us
     - [Register Quote](register_quote.md)
 
 
-<br/>
+<br>
 <p style="text-align:left;">
     [🏠 Back to main page](../index.md)
     <span style="float:right;">

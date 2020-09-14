@@ -19,7 +19,7 @@ topic2 = agent.code_convert(commodity='TX', commodity_type='F', strike_price=0, 
 agent.register_topic(topic2, 'Ask')
 ```
 
-<br/>
+<br>
 <p style="text-align:left;">
     [🏠 Back to main page](../index.md)
     <span style="float:right;">
