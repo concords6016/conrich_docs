@@ -35,7 +35,7 @@ It is distributed under the MIT license. All functions which offer by conrich is
     - [Register Quote](tutorial/register_quote.md)
 - [FAQ](faq.md)
 ---
-### Requirement
+## Requirement
 Package using requires:
 
 - Windows 7+
