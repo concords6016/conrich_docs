@@ -6,7 +6,7 @@
 ![PyPI - License](https://img.shields.io/pypi/l/conrich)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/conrich)
 ![contact](https://img.shields.io/badge/contact-康和證券集團-red)  
-[![HitCount](http://hits.dwyl.com/concords6016/conrich.svg)](http://hits.dwyl.com/concords6016/conrich)
+[![HitCount](http://hits.dwyl.com/concords6016/conrich_docs.svg)](http://hits.dwyl.com/concords6016/conrich_docs)
 
 
 This is the documentation for **conrich**.

@@ -6,7 +6,6 @@
 ![PyPI - License](https://img.shields.io/pypi/l/conrich)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/conrich)
 ![contact](https://img.shields.io/badge/contact-康和證券集團-red)  
-[![HitCount](http://hits.dwyl.com/concords6016/conrich.svg)](http://hits.dwyl.com/concords6016/conrich)
 ---
 **conrich**為康和綜合證券程式下單API，整合了.net framework 4.5架構下的交易介面，讓使用者可以輕鬆的運用python 3.6+ 執行快速下單。
   
@@ -40,7 +39,7 @@ It is distributed under the MIT license. All functions which offer by conrich is
 Using package requires:
 
 - Windows 7+
-- .net framework 4.5
+- .net framework 4.5+
 - Python3.6+
 - 康和金好康
 ---
