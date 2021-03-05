@@ -1,0 +1,7 @@
+類別, 中文說明             , 國內API規格                , 參數             , 說明                                                      
+系統相關,連線狀態事件             ,socket_status_event_handler,connect,連線方式，Send=委託下單、Receive=委託回報
+ ,                  ,                        ,msg,連線狀態訊息
+ ,一般狀態事件 ,general_event_handler,msg,事件回應訊息
+交易相關,委託回報事件,order_report_event_handler,result,委託結果物件
+ ,                  ,                        ,msg,原始回報電文
+ ,主動委成回通知事件,bulletin_event_handler,msg,公告訊息

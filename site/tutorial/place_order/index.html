@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="conrich's documentation made with MkDocs.">
+    
+    
+    <link rel="shortcut icon" href="../../img/concords_logo.ico">
+
+    
+    <title>Place Order - conrich</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="../..">conrich</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Overview</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../install/">Installation</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../user_guide/">Table of content</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../login/">Login API</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Place Order</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../register_report/">Register Report</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../register_quote/">Register Quote</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../faq/">FAQ</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../login/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../register_report/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/concords6016/conrich_docs/edit/master/docs/tutorial/place_order.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#place-order">Place Order</a></li>
+            <li class="second-level"><a href="#stock">Stock</a></li>
+                
+            <li class="second-level"><a href="#futures">Futures</a></li>
+                
+            <li class="second-level"><a href="#foreign-futures">Foreign Futures</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="place-order">Place Order</h2>
+<p>After login to the API <strong><mark class="critic">successfully</mark></strong>, can start to use the <strong><mark class="critic">order</mark></strong> function to place the order.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Parameters can be convert to correctly string for API by constant function.<br>
+ex:<br>
+To convert LotType's ROUND_LOT to correctly string for API.<br>
+→ constant.LotType.ROUND_LOT.value</p>
+</div>
+<h3 id="stock">Stock</h3>
+<p>If you want to place a <strong>new</strong> order of <strong>stcok</strong>, stock symbol as <strong>6016</strong> and price in <strong>10.0</strong> with other settings like lot type
+as <strong>RoundLot</strong>, order type as <strong>Ordinary</strong>, price flag as <strong>FIX</strong>, day trade flag as <strong>DayTradeFlag</strong> ,and time force as ROD.
+Based on this situation, we will pass these parameters into <strong><mark class="critic">order</mark></strong> function.</p>
+<pre><code class="python">from conrich.Stock import constant
+
+result = agent.order(action = constant.Action.NEW_ORDER.value,
+                     branch_no = '8450',
+                     account_no = &quot;YOUR_ACCOUNT&quot;,
+                     lot_type = constant.LotType.ROUND_LOT.value,
+                     order_type = constant.OrderType.ORDINARY.value,
+                     side = constant.Side.BUY.value,
+                     day_trade_flag = constant.DayTradeFlag.N.value,
+                     symbol = '6016',
+                     quantity = 1,
+                     price = 10.0,
+                     price_flag = constant.PriceFlag.FIX.value,
+                     time_in_force = constant.TimeInForce.ROD.value)
+</code></pre>
+
+<h3 id="futures">Futures</h3>
+<p>If you want to place a <strong>new</strong> order of <strong>futures</strong>, stock symbol as <strong>TXFI0</strong> and price in <strong>12000.00</strong> with other settings like
+compound type as <strong>Single</strong>, time force as <strong>ROD</strong>, write off as <strong>AUTO</strong> ,and order type as <strong>LIMIT</strong>.
+Based on this situation, we will pass these parameters into <strong><mark class="critic">order</mark></strong> function.</p>
+<pre><code class="python">from conrich.Futures import constant
+
+result = agent.order(action = constant.Action.NEW_ORDER.value,
+                     branch_no = 'F029000',
+                     account_no = &quot;YOUR_ACCOUNT&quot;,
+                     market_type = constant.Market.FUTURES.value,
+                     compound_type = constant.CompoundType.FUTURES_SINGLE.value,
+                     commodity = 'TXFI0',
+                     time_in_force = constant.TimeInForce.ROD.value,
+                     writeoff = constant.WriteOff.AUTO.value,
+                     order_type = constant.OrderType.LIMIT.value,
+                     side = constant.Side.BUY.value,
+                     quantity = 1,
+                     price = 12000.00)
+</code></pre>
+
+<h3 id="foreign-futures">Foreign Futures</h3>
+<p>If you want to place a <strong>new</strong> order of <strong>foreign futures</strong> in <strong>NYM</strong>, stock symbol as <strong>QM</strong>, contract time on <strong>2020/10</strong> and stop price in <strong>42.95</strong>
+with other settings like put_call as <strong>None</strong>, write off as <strong>OPEN</strong> ,and foreign order type as <strong>LIMIT</strong>.
+Based on this situation, we will pass these parameters into <strong><mark class="critic">order</mark></strong> function.</p>
+<pre><code class="python">agent.order(action=constant.Action.NEW_ORDER.value,
+            branch_no = 'F029000',
+            account_no = &quot;YOUR_ACCOUNT&quot;,
+            exchange = 'NYM',
+            side1 = constant.Side.BUY.value,
+            market_type1 = constant.Market.FUTURES.value,
+            commodity1 = 'QM',
+            commodity_month1 = '202010',
+            strike_price1 = 0,
+            put_call1 = constant.PutCall.NONE.value,
+            side2 = '',
+            market_type2 = '',
+            commodity2 = '',
+            commodity_month2 = '',
+            strike_price2 = 0,
+            put_call2 = constant.PutCall.NONE.value,
+            order_type = constant.ForeignOrderType.LIMIT.value,
+            price = 0,
+            price_numerator = 0,
+            price_denominator = 0,
+            stop_price = 42.95,
+            stop_price_numerator = 0,
+            stop_price_denominator = 0,
+            quantity = 1,
+            writeoff = constant.Writeoff.OPEN.value)
+</code></pre>
+
+<p><br>
+<p style="text-align:left;">
+    <a href="../..">🏠 Back to main page</a>
+    <span style="float:right;">
+        <a href="#top"><font size="5">⮉</font><font size="3">Back to top</font></a>
+    </span>
+</p></p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>conrich is licensed under the <a href='https://github.com/concords6016/conrich_docs/blob/master/LICENSE'>MIT license</a></small><br>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+        <script>var shortcuts = {"help": 191, "next": 39, "previous": 37, "search": 83}</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
